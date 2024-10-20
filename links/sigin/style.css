@@ -8,3 +8,24 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
+.form {
+  margin-top: 10px;
+}
+
+.email-container {
+  position: relative;
+}
+
+input[type="email"] {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.email-text {
+  position: absolute;
+  color: hsl(0, 0%, 45%);
+  font-size: 18px;
+  top: 25%;
+  left: 1.5%;
+}

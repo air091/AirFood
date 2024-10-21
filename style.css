@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.app {
+  display: inline-block;
+  width: 100%;
+  max-width: 260px;
+  padding: 10px;
+  text-align: center;
+}
+
+header {
+  display: inline-block;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  max-width: 72px;
+  height: auto;
+  object-fit: cover;
+}
+
+.text .greet, .text .sign-text {
+  display: block;
+  margin-top: 5px;
+}
+
+.text .greet, .text .greet .orange, .text .greet .blue {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.orange {
+  color: hsl(39, 100%, 45%);
+}
+.blue {
+  color: hsl(240, 100%, 65%);
+}
+
+form .email-address-container, form .password-container {
+  position: relative;
+  margin-top: 8px;
+}
+
+form .email-address-container label, 
+form .password-container label {
+  position: absolute;
+  top: 24%;
+  left: 1%;
+  font-size: 12px;
+  color: black;
+  cursor: text;
+  background-color: white;
+  padding-inline: 2px;
+  transition: all ease 0.08s;
+}
+
+form .email-address-container input, 
+form .password-container input {
+  padding: 6px;
+  width: 100%;
+  max-width: 240px;
+  border-radius: 6px;
+  border: 1px solid;
+  font-size: 13px;
+  outline: none;
+}
+
+form .email-address-container input:focus ~ label, 
+form .password-container input:focus ~ label,
+form .email-address-container input:not(:placeholder-shown) ~ label, 
+form .password-container input:not(:placeholder-shown) ~ label {
+  top: -14%;
+  left: 1.5%;
+  font-size: 8px;
+}
+
+form .links-container {
+  display: flex;
+  margin-top: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form .links-container a, .sign-up a {
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+form .links-container a:hover, .sign-up a:hover {
+  color: hsl(39, 100%, 45%);
+}
+
+form .links-container .submit-btn {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: hsl(240, 100%, 65%);
+  cursor: pointer;
+}
+
+form .links-container .submit-btn .greater-than {
+  color: white;
+}
+
+form .links-container .submit-btn:hover {
+  background-color: hsl(240, 100%, 45%);
+}
+
+.sign-up {
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.sign-up a {
+
+}

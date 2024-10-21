@@ -1,9 +1,32 @@
+:root {
+  --orange-300: hsl(39, 100%, 45%);
+  --blue-300: hsl(240, 100%, 65%);
+  --blue-350: hsl(240, 100%, 45%);
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 header .logo span {
   font-weight: 700;
+}
+
+header .profile-img {
+  cursor: pointer;
 }

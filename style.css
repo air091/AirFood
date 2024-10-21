@@ -21,7 +21,7 @@ body {
 .app {
   display: inline-block;
   width: 100%;
-  max-width: 260px;
+  max-width: 340px;
   padding: 10px;
   text-align: center;
 }
@@ -44,8 +44,12 @@ header img {
 }
 
 .text .greet, .text .greet .orange, .text .greet .blue {
-  font-size: 0.75em;
+  font-size: 18px;
   font-weight: 700;
+}
+
+.sign-text {
+  font-size: 24px;
 }
 
 .orange {
@@ -57,7 +61,7 @@ header img {
 
 form .email-address-container, form .password-container {
   position: relative;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 form .email-address-container label, 
@@ -65,7 +69,7 @@ form .password-container label {
   position: absolute;
   top: 24%;
   left: 1%;
-  font-size: 0.75em;
+  font-size: 18px;
   color: black;
   cursor: text;
   background-color: white;
@@ -77,10 +81,10 @@ form .email-address-container input,
 form .password-container input {
   padding: 6px;
   width: 100%;
-  max-width: 240px;
+  height: 42px;
   border-radius: 6px;
   border: 1px solid;
-  font-size: 0.75em;
+  font-size: 16px;
   outline: none;
 }
 
@@ -88,20 +92,20 @@ form .email-address-container input:focus ~ label,
 form .password-container input:focus ~ label,
 form .email-address-container input:not(:placeholder-shown) ~ label, 
 form .password-container input:not(:placeholder-shown) ~ label {
-  top: -14%;
+  top: -24%;
   left: 1.5%;
-  font-size: 0.5em;
+  font-size: 16px;
 }
 
 form .links-container {
   display: flex;
-  margin-top: 8px;
+  margin-top: 14px;
   justify-content: space-between;
   align-items: center;
 }
 
 form .links-container a, .sign-up a {
-  font-size: 0.625em;
+  font-size: 16px;
   color: black;
   text-decoration: none;
 }
@@ -112,8 +116,8 @@ form .links-container a:hover, .sign-up a:hover {
 
 form .links-container .submit-btn {
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border: none;
   background-color: var(--blue-300);
   cursor: pointer;

@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+header .logo span {
+  font-weight: 700;
+}

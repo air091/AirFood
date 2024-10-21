@@ -1,3 +1,8 @@
+:root {
+  --orange-300: hsl(39, 100%, 45%);
+  --blue-300: hsl(240, 100%, 65%);
+  --blue-350: hsl(240, 100%, 45%);
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -39,15 +44,15 @@ header img {
 }
 
 .text .greet, .text .greet .orange, .text .greet .blue {
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 700;
 }
 
 .orange {
-  color: hsl(39, 100%, 45%);
+  color: var(--orange-300);
 }
 .blue {
-  color: hsl(240, 100%, 65%);
+  color: var(--blue-300);
 }
 
 form .email-address-container, form .password-container {
@@ -60,7 +65,7 @@ form .password-container label {
   position: absolute;
   top: 24%;
   left: 1%;
-  font-size: 12px;
+  font-size: 0.75em;
   color: black;
   cursor: text;
   background-color: white;
@@ -75,7 +80,7 @@ form .password-container input {
   max-width: 240px;
   border-radius: 6px;
   border: 1px solid;
-  font-size: 13px;
+  font-size: 0.75em;
   outline: none;
 }
 
@@ -85,7 +90,7 @@ form .email-address-container input:not(:placeholder-shown) ~ label,
 form .password-container input:not(:placeholder-shown) ~ label {
   top: -14%;
   left: 1.5%;
-  font-size: 8px;
+  font-size: 0.5em;
 }
 
 form .links-container {
@@ -96,13 +101,13 @@ form .links-container {
 }
 
 form .links-container a, .sign-up a {
-  font-size: 10px;
+  font-size: 0.625em;
   color: black;
   text-decoration: none;
 }
 
 form .links-container a:hover, .sign-up a:hover {
-  color: hsl(39, 100%, 45%);
+  color: var(--orange-300);
 }
 
 form .links-container .submit-btn {
@@ -110,7 +115,7 @@ form .links-container .submit-btn {
   width: 28px;
   height: 28px;
   border: none;
-  background-color: hsl(240, 100%, 65%);
+  background-color: var(--blue-300);
   cursor: pointer;
 }
 
@@ -119,14 +124,9 @@ form .links-container .submit-btn .greater-than {
 }
 
 form .links-container .submit-btn:hover {
-  background-color: hsl(240, 100%, 45%);
+  background-color: var(--blue-350);
 }
 
 .sign-up {
   margin-top: 10px;
-  font-size: 10px;
-}
-
-.sign-up a {
-
 }
